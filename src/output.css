@@ -184,6 +184,12 @@
   }
 }
 @layer utilities {
+  .sticky {
+    position: sticky;
+  }
+  .top-0 {
+    top: calc(var(--spacing) * 0);
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -193,8 +199,20 @@
   .my-12 {
     margin-block: calc(var(--spacing) * 12);
   }
+  .my-20 {
+    margin-block: calc(var(--spacing) * 20);
+  }
+  .my-24 {
+    margin-block: calc(var(--spacing) * 24);
+  }
   .my-32 {
     margin-block: calc(var(--spacing) * 32);
+  }
+  .mb-32 {
+    margin-bottom: calc(var(--spacing) * 32);
+  }
+  .mb-40 {
+    margin-bottom: calc(var(--spacing) * 40);
   }
   .block {
     display: block;
@@ -244,6 +262,9 @@
   .w-\[160px\] {
     width: 160px;
   }
+  .w-full {
+    width: 100%;
+  }
   .border-collapse {
     border-collapse: collapse;
   }
@@ -262,8 +283,14 @@
   .justify-center {
     justify-content: center;
   }
+  .justify-end {
+    justify-content: flex-end;
+  }
   .justify-evenly {
     justify-content: space-evenly;
+  }
+  .justify-start {
+    justify-content: flex-start;
   }
   .gap-8 {
     gap: calc(var(--spacing) * 8);
@@ -276,6 +303,12 @@
   }
   .gap-24 {
     gap: calc(var(--spacing) * 24);
+  }
+  .gap-30 {
+    gap: calc(var(--spacing) * 30);
+  }
+  .gap-40 {
+    gap: calc(var(--spacing) * 40);
   }
   .gap-x-8 {
     column-gap: calc(var(--spacing) * 8);
@@ -310,6 +343,13 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-2 {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
+  }
+  .bg-amber-100 {
+    background-color: var(--color-amber-100);
+  }
   .bg-amber-200 {
     background-color: var(--color-amber-200);
   }
@@ -331,6 +371,21 @@
   .p-8 {
     padding: calc(var(--spacing) * 8);
   }
+  .p-12 {
+    padding: calc(var(--spacing) * 12);
+  }
+  .p-20 {
+    padding: calc(var(--spacing) * 20);
+  }
+  .p-30 {
+    padding: calc(var(--spacing) * 30);
+  }
+  .p-40 {
+    padding: calc(var(--spacing) * 40);
+  }
+  .px-12 {
+    padding-inline: calc(var(--spacing) * 12);
+  }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
@@ -339,6 +394,9 @@
   }
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
+  }
+  .pt-30 {
+    padding-top: calc(var(--spacing) * 30);
   }
   .text-center {
     text-align: center;
@@ -415,8 +473,15 @@
     outline-style: var(--tw-outline-style);
     outline-width: 2px;
   }
+  .outline-8 {
+    outline-style: var(--tw-outline-style);
+    outline-width: 8px;
+  }
   .outline-indigo-400 {
     outline-color: var(--color-indigo-400);
+  }
+  .outline-indigo-900 {
+    outline-color: var(--color-indigo-900);
   }
 }
 @property --tw-space-x-reverse {
