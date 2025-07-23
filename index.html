@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
     <title>Document</title>
   </head>
-  <body class="bg-indigo-200">
+  <body class="bg-indigo-200 dark:bg-neutral-600">
     <!-- Header -->
-    <header class="sticky top-0 bg-indigo-800 shadow-md">
+    <header class="sticky top-0 bg-indigo-800 dark:bg-neutral-800 shadow-md ">
       <div class="flex justify-around items-center h-20">
-        <a class="text-2xl md:text-4xl text-amber-100 font-bold">James Darrel Bautista</a>
+        <a class="text-2xl md:text-4xl text-amber-100 dark:text-neutral-300 font-bold">James Darrel Bautista</a>
         <div class="flex">
-          <nav class="text-xl md:text-2xl flex space-x-12 text-amber-100">
+          <nav class="text-xl md:text-2xl flex space-x-12 dark:text-neutral-300 text-amber-100">
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
@@ -23,7 +24,7 @@
 
     <!-- Hero test -->
     <div
-      class="font-mono mx-auto w-4/5 md:w-3/4  font-bold my-12 md:my-20 text-indigo-600 leading-12 lg:leading-24 block bg-amber-100 border p-4 shadow-lg text-4xl lg:text-6xl"
+      class="font-mono mx-auto w-4/5 md:w-3/4  font-bold my-12 md:my-20 text-indigo-600 dark:text-neutral-200 leading-12 lg:leading-24 block bg-amber-100 p-4 shadow-lg text-4xl lg:text-6xl dark:bg-neutral-500"
       id="about"
     >
       Aspiring Web Developer <br />
@@ -39,11 +40,11 @@
         alt=""
         class="rounded-full w-2/5 lg:w-1/3 shadow-lg mx-auto my-12"
       />
-      <div class="mx-auto text-lg lg:text-xl leading-10 text-justify lg:text-left">
+      <div class="mx-auto text-lg lg:text-xl leading-10 text-justify lg:text-left dark:text-neutral-200">
         <p class="my-2">
           Your top-rated <strong>Upwork freelancer</strong>
           that specializes in
-          <strong class="text-indigo-900 text-xl lg:text-2xl">Make.com automations</strong
+          <strong class="text-indigo-900 dark:text-neutral-800 text-xl lg:text-2xl">Make.com automations</strong
           >! I have helped various clients automate their custom workflows for
           over 4 years and counting!
         </p>
@@ -58,7 +59,7 @@
     </div>
     <div class="my-24">
       <h2
-        class="text-center font-mono text-6xl lg:text-8xl font-bold text-amber-100 bg-indigo-600 shadow-md outline-8 outline-indigo-900 py-4"
+        class="text-center font-mono text-6xl lg:text-8xl font-bold text-amber-100 bg-indigo-600 shadow-md outline-8 outline-indigo-900 py-4 dark:bg-neutral-800 dark:outline-neutral-900 dark:text-neutral-200"
         id="skills"
       >
         Skills
@@ -79,7 +80,7 @@
 
     <!-- Contact -->
     <h2
-      class="text-center font-mono text-6xl lg:text-8xl font-bold text-amber-100 bg-indigo-600 shadow-md outline-8 outline-indigo-900 py-4"
+      class="text-center font-mono text-6xl lg:text-8xl font-bold text-amber-100 bg-indigo-600 shadow-md outline-8 outline-indigo-900 py-4 dark:bg-neutral-800 dark:outline-neutral-900 dark:text-neutral-200"
       id="contact"
     >
       Contact
@@ -106,8 +107,10 @@
   </body>
 
   <footer
-    class="flex justify-center items-center p-4 bg-indigo-600 text-amber-100"
+    class="flex justify-between items-center p-4 bg-indigo-600 text-amber-100 dark:bg-neutral-800"
   >
-    All rights reserved 2025
+    <p class="dark:text-neutral-300">All rights reserved 2025</p>
+    <button id="dark" type="button" class="bg-gray-800 p-2 rounded-xl text-white dark:bg-gray-600">Toggle Dark mode</button>
   </footer>
+  
 </html>
