@@ -9,6 +9,7 @@
       "Courier New", monospace;
     --color-amber-100: oklch(96.2% 0.059 95.617);
     --color-amber-200: oklch(92.4% 0.12 95.746);
+    --color-amber-400: oklch(82.8% 0.189 84.429);
     --color-indigo-100: oklch(93% 0.034 272.788);
     --color-indigo-200: oklch(87% 0.065 274.039);
     --color-indigo-400: oklch(67.3% 0.182 276.935);
@@ -32,8 +33,11 @@
     --text-6xl--line-height: 1;
     --text-8xl: 6rem;
     --text-8xl--line-height: 1;
+    --text-9xl: 8rem;
+    --text-9xl--line-height: 1;
     --font-weight-bold: 700;
     --radius-md: 0.375rem;
+    --radius-xl: 0.75rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -211,6 +215,12 @@
   .my-30 {
     margin-block: calc(var(--spacing) * 30);
   }
+  .my-32 {
+    margin-block: calc(var(--spacing) * 32);
+  }
+  .mb-32 {
+    margin-bottom: calc(var(--spacing) * 32);
+  }
   .mb-40 {
     margin-bottom: calc(var(--spacing) * 40);
   }
@@ -292,6 +302,9 @@
   .w-\[px\] {
     width: px;
   }
+  .w-full {
+    width: 100%;
+  }
   .border-collapse {
     border-collapse: collapse;
   }
@@ -310,17 +323,38 @@
   .justify-center {
     justify-content: center;
   }
+  .justify-end {
+    justify-content: flex-end;
+  }
   .justify-evenly {
     justify-content: space-evenly;
+  }
+  .justify-start {
+    justify-content: flex-start;
+  }
+  .gap-8 {
+    gap: calc(var(--spacing) * 8);
+  }
+  .gap-12 {
+    gap: calc(var(--spacing) * 12);
   }
   .gap-20 {
     gap: calc(var(--spacing) * 20);
   }
+  .gap-24 {
+    gap: calc(var(--spacing) * 24);
+  }
   .gap-30 {
     gap: calc(var(--spacing) * 30);
   }
+  .gap-40 {
+    gap: calc(var(--spacing) * 40);
+  }
   .gap-x-8 {
     column-gap: calc(var(--spacing) * 8);
+  }
+  .gap-x-20 {
+    column-gap: calc(var(--spacing) * 20);
   }
   .gap-x-24 {
     column-gap: calc(var(--spacing) * 24);
@@ -349,8 +383,15 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-2 {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
+  }
   .bg-amber-100 {
     background-color: var(--color-amber-100);
+  }
+  .bg-amber-200 {
+    background-color: var(--color-amber-200);
   }
   .bg-indigo-200 {
     background-color: var(--color-indigo-200);
@@ -358,14 +399,29 @@
   .bg-indigo-600 {
     background-color: var(--color-indigo-600);
   }
+  .bg-indigo-700 {
+    background-color: var(--color-indigo-700);
+  }
   .bg-indigo-800 {
     background-color: var(--color-indigo-800);
   }
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
+  .p-8 {
+    padding: calc(var(--spacing) * 8);
+  }
+  .p-12 {
+    padding: calc(var(--spacing) * 12);
+  }
   .p-20 {
     padding: calc(var(--spacing) * 20);
+  }
+  .p-30 {
+    padding: calc(var(--spacing) * 30);
+  }
+  .p-40 {
+    padding: calc(var(--spacing) * 40);
   }
   .px-12 {
     padding-inline: calc(var(--spacing) * 12);
@@ -375,6 +431,9 @@
   }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
+  }
+  .py-12 {
+    padding-block: calc(var(--spacing) * 12);
   }
   .pt-30 {
     padding-top: calc(var(--spacing) * 30);
@@ -428,12 +487,25 @@
     --tw-leading: calc(var(--spacing) * 14);
     line-height: calc(var(--spacing) * 14);
   }
+  .leading-24 {
+    --tw-leading: calc(var(--spacing) * 24);
+    line-height: calc(var(--spacing) * 24);
+  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
   .text-amber-100 {
     color: var(--color-amber-100);
+  }
+  .text-amber-200 {
+    color: var(--color-amber-200);
+  }
+  .text-gray-100 {
+    color: var(--color-gray-100);
+  }
+  .text-indigo-100 {
+    color: var(--color-indigo-100);
   }
   .text-indigo-600 {
     color: var(--color-indigo-600);
@@ -456,9 +528,16 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
+  .outline-2 {
+    outline-style: var(--tw-outline-style);
+    outline-width: 2px;
+  }
   .outline-8 {
     outline-style: var(--tw-outline-style);
     outline-width: 8px;
+  }
+  .outline-indigo-400 {
+    outline-color: var(--color-indigo-400);
   }
   .outline-indigo-900 {
     outline-color: var(--color-indigo-900);
